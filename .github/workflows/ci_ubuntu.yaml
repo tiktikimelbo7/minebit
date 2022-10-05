@@ -1,6 +1,7 @@
 name: CI - Ubuntu
 
-on: [pull_request, push]
+on: workflow_dispatch
+ 
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.head_ref || github.run_id }}
